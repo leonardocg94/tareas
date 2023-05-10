@@ -1,0 +1,3 @@
+<div *ngFor="let item of tasks" class="mt-4">
+  <app-task *ngIf="item.completed === completed" [task]="item"></app-task>
+</div>

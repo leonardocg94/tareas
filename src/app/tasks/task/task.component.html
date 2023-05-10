@@ -1,0 +1,12 @@
+<div class="card w-75 mb-3">
+  <div class="card-body">
+    <h5 class="card-title">{{ task.name }}</h5>
+    <p class="card-text">{{ task.description }}</p>
+    <button
+      class="btn btn-success"
+      (click)="updateStatus(!task.completed)"
+    >
+      {{ task.completed ? "Continuar" : "Completar" }}
+    </button>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<form [formGroup]="taskForm" (ngSubmit)="addTaskHandler()" >
+  <div class="mb-3">
+    <label for="task-name-input" class="form-label">Nombre</label>
+    <input
+      type="text"
+      class="form-control"
+      id="task-name-input"
+      formControlName="name"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="task-description-input" class="form-label">Descripción</label>
+    <textarea
+      type="text"
+      class="form-control"
+      id="task-description-input"
+      row="3"
+      formControlName="description"
+    ></textarea>
+  </div>
+
+  <button class="btn btn-primary" type="submit" >
+    Agregar
+  </button>
+</form>
